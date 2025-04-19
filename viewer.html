@@ -1,0 +1,11 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>View Flipbook</title>
+</head>
+<body>
+    <iframe src="{{ url_for('static', filename='flipbooks/' + flipbook_path + '/index.html') }}" 
+            width="100%" height="600" style="border:none;"></iframe>
+</body>
+</html>

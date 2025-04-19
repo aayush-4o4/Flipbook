@@ -1,0 +1,17 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flipbook Gallery</title>
+</head>
+<body>
+    <h1>Flipbook Gallery</h1>
+    {% for title, path in flipbooks.items() %}
+        <div>
+            <h3>{{ title }}</h3>
+            <iframe src="{{ path }}" width="800" height="600" style="border:none;"></iframe>
+        </div>
+    {% endfor %}
+    <a href="/">Upload More</a>
+</body>
+</html>
